@@ -102,6 +102,7 @@ const cards = [
       "Como podem ser tão esquecidos na urbanidade?"
     ]
   },
+
   {
     title: "Cartão 13",
     thumb: "imagens/13.jpg",
@@ -138,7 +139,7 @@ const cards = [
       "De resistência, arte e corrida."
     ]
   },
-
+  
   {
     title: "Cartão 18",
     thumb: "imagens/18.jpg",

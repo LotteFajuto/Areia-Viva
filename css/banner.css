@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* garante que o rodapé vá pro final se a página for pequena */
-
 }
 
 /* ========== FONTES PERSONALIZADAS ========== */
@@ -143,12 +142,12 @@ header {
 
 /* ========== GALERIA + PREVIEW ========== */
 .content {
-  flex: 1;
   display: flex;
-  height: calc(100vh - 180px);
-  max-height: calc(100vh - 180px);
-  overflow: hidden;
+  height: auto;
+  max-height: none;
+  flex-wrap: wrap;
 }
+
 
 #gallery {
   width: 25%;
