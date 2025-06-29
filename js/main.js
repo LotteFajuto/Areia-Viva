@@ -103,15 +103,6 @@ const cards = [
     ]
   },
   {
-    title: "Cartão 12",
-    thumb: "imagens/12.jpg",
-    full: "imagens/12.jpg",
-    text: [
-      "Nem mesmo o governo ajuda,",
-      "Aparece só para encontrar firula."
-    ]
-  },
-  {
     title: "Cartão 13",
     thumb: "imagens/13.jpg",
     full: "imagens/13.jpg",
@@ -147,15 +138,7 @@ const cards = [
       "De resistência, arte e corrida."
     ]
   },
-  {
-    title: "Cartão 17",
-    thumb: "imagens/17.jpg",
-    full: "imagens/17.jpg",
-    text: [
-      "Os ambulantes não têm patrão,",
-      "Mas carregam o mundo no coração."
-    ]
-  },
+
   {
     title: "Cartão 18",
     thumb: "imagens/18.jpg",

@@ -1,9 +1,12 @@
-/* ========== RESET ==========
-*/
+/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,12 +18,7 @@ body {
   flex-direction: column;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* ========== FONTES ==========
-*/
+/* ========== FONTES PERSONALIZADAS ========== */
 @font-face {
   font-family: 'Alex Brush';
   src: url('../fonts/AlexBrush-Regular.ttf') format('truetype');
@@ -28,8 +26,7 @@ html {
   font-style: normal;
 }
 
-/* ========== HEADER E MENU ==========
-*/
+/* ========== HEADER E MENU ========== */
 header {
   background: #ffffffdd;
   padding: 20px;
@@ -66,8 +63,7 @@ header {
   color: #0B2545;
 }
 
-/* ========== HERO SECTION ==========
-*/
+/* ========== HERO SECTION ========== */
 .hero {
   background: linear-gradient(to bottom, #56CFE1cc, #F3F9FFcc);
   padding: 80px 20px;
@@ -77,13 +73,13 @@ header {
 
 .hero-content h1 {
   font-family: 'Alex Brush', cursive;
-  font-size: 60px;
+  font-size: 100px;
   color: #000000;
   margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 28px;
   color: #023E8A;
   margin-bottom: 30px;
 }
@@ -118,8 +114,7 @@ header {
   background: #FAA307;
 }
 
-/* ========== SEÇÃO SOBRE ==========
-*/
+/* ========== SEÇÃO SOBRE ========== */
 .sobre {
   padding: 60px 20px;
   background: #FFECCC;
@@ -138,14 +133,13 @@ header {
 }
 
 .sobre p {
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
-/* ========== GALERIA + PREVIEW ==========
-*/
+/* ========== GALERIA + PREVIEW ========== */
 .content {
   flex: 1;
   display: flex;
@@ -214,8 +208,7 @@ header {
   font-size: 34px;
 }
 
-/* ========== BOTÃO FLUTUANTE ==========
-*/
+/* ========== BOTÃO FLUTUANTE ========== */
 #topBtn {
   position: fixed;
   bottom: 30px;
@@ -244,7 +237,7 @@ header {
 }
 
 .preview-historias h2 {
-  font-size: 28px;
+  font-size: 38px;
   color: #FF6D00;
   margin-bottom: 30px;
 }
@@ -323,10 +316,9 @@ header {
   }
 }
 
-/* ========== INTRODUÇÃO ==========
-*/
+/* ========== INTRODUÇÃO ========== */
 #intro {
-  background: rgba(255, 253, 240, 0.9); /* cor suave inspirada em papel artesanal */
+  background: rgba(255, 253, 240, 0.9);
   padding: 30px 20px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -354,7 +346,7 @@ header {
 }
 
 #intro .container {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -363,12 +355,179 @@ header {
   font-family: 'Alex Brush', cursive;
   font-size: 48px;
   color: #2c2927;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #intro p {
   font-size: 16px;
   color: #333;
   line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* ========== HISTORISTAS ========== */
+.intro-historistas {
+  padding: 60px 20px;
+  background: #bcf2ff;
+  text-align: center;
+}
+
+.intro-historistas h1 {
+  font-size: 36px;
+  color: #FF6D00;
   margin-bottom: 15px;
+  font-family: 'Alex Brush', cursive;
+}
+
+.intro-historistas p {
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.historista {
+  padding: 50px 20px;
+  background: #ffffffcc;
+  border-bottom: 1px solid #ddd;
+}
+
+.historia-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.historia-foto {
+  flex: 1 1 300px;
+}
+
+.historia-foto img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.historia-texto {
+  flex: 2 1 500px;
+}
+
+.historia-texto h2 {
+  color: #1E6091;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.historia-texto p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .historia-container {
+    flex-direction: column;
+  }
+
+  .historia-texto {
+    text-align: left;
+  }
+}
+
+/* ========== GALERIA A3 ========== */
+.galeria-a3 {
+  padding: 60px 20px;
+  background: #f0f8ffcc;
+  text-align: center;
+}
+
+.galeria-a3 h2 {
+  font-size: 52px;
+  font-family: 'Alex Brush', cursive;
+  color: #FF6D00;
+  margin-bottom: 10px;
+}
+
+.descricao-a3 {
+  font-size: 20px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.grid-a3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.cartao-a3 {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.cartao-a3:hover {
+  transform: scale(1.02);
+}
+
+.cartao-a3 img {
+  width: 100%;
+  display: block;
+}
+
+.cartao-a3 .legenda {
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========== PÁGINA SOBRE ========== */
+.sobre-projeto, .sobre-autora, .sobre-tecnicas, .agradecimentos {
+  padding: 60px 20px;
+  background: #fff7f0dd;
+}
+
+.sobre-projeto h1,
+.sobre-autora h2,
+.sobre-tecnicas h2,
+.agradecimentos h2 {
+  font-size: 38px;
+  color: #1E6091;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sobre-projeto p,
+.sobre-autora p,
+.agradecimentos p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.sobre-tecnicas ul {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.sobre-tecnicas li {
+  font-size: 21px;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
 }
